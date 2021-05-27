@@ -1,0 +1,183 @@
+:root 
+{
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);            
+    --dark-blue: hsl(249, 10%, 26%);
+    --grayish-blue: hsl(246, 25%, 77%);
+}
+html 
+{
+    margin: 0;
+    padding: 0;    
+}
+body
+{
+    font-size: 15px;    
+    font-family: 'Poppins', sans-serif;   
+    color: white; 
+}
+.container h1 
+{
+    line-height: 1.5;
+}
+.form
+{   
+    border-radius: 10px;
+    background-color: white;    
+    color: var(--grayish-blue);    
+}
+form 
+{
+    display: flex;
+    flex-direction: column;
+}
+.trybtn
+{
+    padding: 20px;
+    background-color: var(--blue);
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 10px;
+}
+.trybtn div 
+{    
+    justify-content: center;
+    width: 200px;
+    margin: 0 auto;
+}
+.trybtn span
+{
+    font-weight: bolder;
+}
+.claimbtn
+{
+    padding: 20px;
+    background-color: var(--green);
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+.terms 
+{
+    margin: 0 auto 10px;
+    text-align: center;
+    font-size: 10px;
+    width: 220px;
+}
+footer 
+{    
+    margin: 20px auto;
+}
+
+@media (max-width: 450px) {
+    body
+    {
+        background-color: var(--red);
+        background-image: url(/images/bg-intro-mobile.png);
+    }    
+    .container 
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;        
+        text-align: center;
+    }     
+    .container h1 
+    {
+        padding-top: 50px;
+    }   
+    .container p 
+    {
+        margin: 20px 0;
+    } 
+    .info 
+    {           
+        padding-top: 15%;          
+    }
+    .action 
+    {
+        width: 100%;  
+    }    
+    .form 
+    {
+        margin: 0 10px;
+    }
+    .form input
+    {
+        padding: 20px;
+        border-radius: 5px;    
+        border: 1px solid lightgray;        
+        margin: 10px 10px 0;
+    }   
+    .trybtn
+    {
+        margin: 0 10px 10px;           
+    } 
+    .claimbtn
+    {
+        margin: 10px 10px;
+    }         
+}
+
+@media (min-width: 451px) {
+    body
+    {
+        background-color: var(--red);
+        background-image: url(/images/bg-intro-desktop.png);
+    }    
+    .container 
+    {
+        display: flex;          
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);  
+        justify-content: center;  
+        width: 80%;            
+    }         
+    .info 
+    {           
+        padding-top: 15%; 
+        width: 50%;          
+    }
+    .action 
+    {
+        margin-left: 50px;
+        width: 50%;  
+    }
+    .container h1 
+    {
+        width: 100%;
+        padding: 0 10px;
+        text-align: left;
+        font-size: 40px;
+    } 
+    .container p 
+    {
+        margin: 10px 0;
+        width: 100%;        
+        text-align: left;
+    }
+    .form input
+    {
+        padding: 20px;
+        border-radius: 5px;    
+        border: 1px solid lightgray;        
+        margin: 20px 20px 0;        
+    } 
+    .claimbtn
+    {
+        margin: 10px 20px;
+    } 
+    .terms 
+    {
+        padding-bottom: 30px;
+        margin: 0 auto 10px;
+        text-align: center;
+        font-size: 10px;
+        width: 70%;
+    }      
+}
