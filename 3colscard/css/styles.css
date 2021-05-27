@@ -1,0 +1,123 @@
+:root 
+{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+html
+{
+    margin: 0;
+    padding: 0;
+}
+.car h1 
+{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 30px;
+}
+.car p 
+{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 10px;
+}
+@media (max-width: 450px) 
+{
+    .container 
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px;
+    }
+    .car 
+    {   color: white; 
+        padding: 30px 50px;
+    }    
+    .sedan
+    {
+        border-radius: 10px 10px 0 0;
+        background-color: var(--bright-orange);          
+    }
+    .sedan .btnlm 
+    {
+        color:var(--bright-orange);  
+    }
+    .suvs
+    {
+        background-color: var(--dark-cyan);
+    }  
+    .suvs .btnlm 
+    {
+        color:var(--dark-cyan);  
+    }  
+    .lux
+    {
+        border-radius: 0 0 10px 10px;   
+        background-color: var(--very-dark-cyan); 
+    }  
+    .lux .btnlm 
+    {
+        color:var(--very-dark-cyan);  
+    }   
+    .btnlm
+    {
+        margin-top: 10px;
+        border-radius: 20px;
+        padding: 10px 20px;
+        border-color: var(--transparent-white);
+    }    
+}
+@media (min-width: 451px) 
+{
+    .container 
+    {
+        display: flex;
+        justify-content: center;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%, -50%); 
+        position: fixed; 
+        width: 70%;
+    }
+    .car 
+    {   color: white; 
+        width: 100%;
+    }    
+    .sedan
+    {
+        padding: 50px;
+        border-radius: 10px 0 0 10px;
+        background-color: var(--bright-orange);          
+    }
+    .sedan .btnlm 
+    {
+        color:var(--bright-orange);  
+    }
+    .suvs
+    {
+        padding: 50px;
+        background-color: var(--dark-cyan);
+    }  
+    .suvs .btnlm 
+    {
+        color:var(--dark-cyan);  
+    }  
+    .lux
+    {
+        padding: 50px;
+        border-radius: 0 10px 10px 0;   
+        background-color: var(--very-dark-cyan); 
+    }  
+    .lux .btnlm 
+    {
+        color:var(--very-dark-cyan);  
+    } 
+    .btnlm
+    {
+        margin-top: 50px;
+        border-radius: 20px;
+        padding: 10px 15px;
+        border-color: var(--transparent-white);
+    }     
+}
